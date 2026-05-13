@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soundiq | Your Playlist</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./img/soundiq.png">
+</head>
+<body>
+    <div class="sidebar">
+        <img src="img/soundiq.png" alt="">
+        <div class="logo">Soundiq</div>
+        <div class="menu-item" onclick="home()">Home</div>
+        <div class="menu-item" onclick="searchSong()">Search</div>
+    </div>
+    <div class="main2">
+        <div class="details">
+            <img src="img/img4.jpg" alt="">
+            <div class="title">Top Hits</div>
+        </div>
+    <div id="songList" class="playlist">
+            <div class="song">
+                <div class="song-info">
+                    <span class="song-title">1-800-273-8255</span>
+                    <span class="artist">Logic (feat. Alessia Cara & Khalid)</span>
+                </div>
+                <button id="btn-0" onclick="togglePlay1(0)">▶</button>
+            </div>
+
+            <div class="song">
+                <div class="song-info">
+                    <span class="song-title">Back to You</span>
+                    <span class="artist">Harry Styles</span>
+                </div>
+                <button id="btn-1" onclick="togglePlay1(1)">▶</button>
+            </div>
+
+            <div class="song">
+                <div class="song-info">
+                    <span class="song-title">Bodak Yellow</span>
+                    <span class="artist">Dua Lipa</span>
+                </div>
+                <button id="btn-2" onclick="togglePlay1(2)">▶</button>
+            </div>
+
+            <div class="song">
+                <div class="song-info">
+                    <span class="song-title">Wild Thoughts</span>
+                    <span class="artist">Dua Lipa</span>
+                </div>
+                <button id="btn-2" onclick="togglePlay1(3)">▶</button>
+            </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

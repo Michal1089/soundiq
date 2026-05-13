@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soundiq | Your Playlist</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./img/soundiq.png">
+</head>
+<body>
+    <div class="sidebar">
+        <img src="img/soundiq.png" alt="">
+        <div class="logo">Soundiq</div>
+        <div class="menu-item" onclick="home()">Home</div>
+        <div class="menu-item" onclick="searchSong()">Search</div>
+    </div>
+    <div class="main2">
+        <div class="details">
+            <img src="img/img3.jpg" alt="">
+            <div class="title">Top Hits</div>
+        </div>
+    <div id="songList" class="playlist">
+            <div class="song">
+                <div class="song-info">
+                    <span class="song-title">Blood Milk Moon</span>
+                    <span class="artist">Logic (feat. Alessia Cara & Khalid)</span>
+                </div>
+                <button id="btn-0" onclick="togglePlay2(0)">▶</button>
+            </div>
+
+            <div class="song">
+                <div class="song-info">
+                    <span class="song-title">Hinoki Wood</span>
+                    <span class="artist">Harry Styles</span>
+                </div>
+                <button id="btn-1" onclick="togglePlay2(1)">▶</button>
+            </div>
+
+            <div class="song">
+                <div class="song-info">
+                    <span class="song-title">Three Piece Suit (feat. Azekel)</span>
+                    <span class="artist">Dua Lipa</span>
+                </div>
+                <button id="btn-2" onclick="togglePlay2(2)">▶</button>
+            </div>
+
+            <div class="song">
+                <div class="song-info">
+                    <span class="song-title">Three Piece Suit (feat. Azekel)</span>
+                    <span class="artist">Dua Lipa</span>
+                </div>
+                <button id="btn-2" onclick="togglePlay2(3)">▶</button>
+            </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

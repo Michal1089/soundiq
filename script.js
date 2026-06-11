@@ -762,7 +762,7 @@ function startVisualizer() {
 
 audio.addEventListener("play", () => {
     console.log("DISC FOUND", document.getElementById("spinningDisc"));
-    // setupAudioContext(); //!!!
+    setupAudioContext(); //!!!
     if (audioCtx && audioCtx.state === "suspended") {
         audioCtx.resume();
     }

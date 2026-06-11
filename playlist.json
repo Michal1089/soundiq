@@ -1,0 +1,115 @@
+{
+  "topHits": [
+    {
+      "title": "1-800-273-8255",
+      "src": "audio1/1-800-273-8255.mp3"
+    },
+    {
+      "title": "Back to You",
+      "src": "audio1/Back to You.mp3"
+    },
+    {
+      "title": "Bodak Yellow",
+      "src": "audio1/Bodak Yellow.mp3"
+    },
+    {
+      "title": "Wild Thoughts",
+      "src": "audio1/Wild Thoughts.mp3"
+    }
+  ],
+
+  "chillSongs": [
+    {
+      "title": "Blood Milk Moon",
+      "src": "audio2/Blood Milk Moon.mp3"
+    },
+    {
+      "title": "Hinoki Wood",
+      "src": "audio2/Hinoki Wood.mp3"
+    },
+    {
+      "title": "Three Piece Suit",
+      "src": "audio2/Three Piece Suit.mp3"
+    },
+    {
+      "title": "You got time and I got money",
+      "src": "audio2/You got time and I got money.mp3"
+    }
+  ],
+
+  "disneyPiano": [
+    {
+      "title": "Can You Feel The Love Tonight",
+      "src": "audio5/Can You Feel The Love Tonight.mp3"
+    },
+    {
+      "title": "Colors of the Wind",
+      "src": "audio5/Colors of the Wind.mp3"
+    },
+    {
+      "title": "La Festin",
+      "src": "audio5/La Festin.mp3"
+    },
+    {
+      "title": "Zoo",
+      "src": "audio5/Zoo.mp3"
+    }
+  ],
+
+  "hits": [
+    {
+      "title": "Africa",
+      "src": "audio4/Africa.mp3"
+    },
+    {
+      "title": "Every Body Wants To Rule The World",
+      "src": "audio4/Every Body Wants To Rule The World.mp3"
+    },
+    {
+      "title": "Sweet Dreams (Are Made of This)",
+      "src": "audio4/Sweet Dreams (Are Made of This).mp3"
+    },
+    {
+      "title": "Take on Me",
+      "src": "audio4/Take on Me.mp3"
+    }
+  ],
+
+  "polskiHipHop": [
+    {
+      "title": "Ja Mam To Co Ty",
+      "src": "audio3/Ja Mam To Co Ty.mp3"
+    },
+    {
+      "title": "Jest Jedna Rzecz",
+      "src": "audio3/Jest Jedna Rzecz.mp3"
+    },
+    {
+      "title": "Jestem Bogiem",
+      "src": "audio3/Jestem Bogiem.mp3"
+    },
+    {
+      "title": "Na Szczycie",
+      "src": "audio3/Na Szczycie.mp3"
+    }
+  ],
+
+  "rock": [
+    {
+      "title": "Wish You Were Here",
+      "src": "audio6/1-800-273-8255.mp3"
+    },
+    {
+      "title": "Dreams",
+      "src": "audio6/Dreams - 2004 Remaster.mp3"
+    },
+    {
+      "title": "Stairway to Heaven",
+      "src": "audio6/Stairway to Heaven - Remaster.mp3"
+    },
+    {
+      "title": "Paint It, Black",
+      "src": "audio6/Wild Thoughts.mp3"
+    }
+  ]
+}

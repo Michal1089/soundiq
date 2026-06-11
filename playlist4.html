@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soundiq | Your Playlist</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./img/soundiq.png">
+</head>
+
+<body>
+    <div class="lang-switcher-container">
+        <select id="langSelect" onchange="changeLanguage(this.value)">
+            <option value="pl">PL</option>
+            <option value="en">EN</option>
+            <option value="de">DE</option>
+            <option value="es">ES</option>
+            <option value="it">IT</option>
+            <option value="cs">CS</option>
+            <option value="ja">JA</option>
+            <option value="ar">AR</option>
+        </select>
+    </div>
+    <div class="sidebar">
+        <img src="img/soundiq.png" alt="">
+        <div class="logo">Soundiq</div>
+        <div class="menu-item translate-me" onclick="home()">Home</div>
+        <div class="menu-item translate-me" onclick="searchSong()">Szukaj</div>
+        <div class="menu-item fav-link translate-me" onclick="openFavourites()">&#9829; Polubione</div>
+        <div class="menu-item translate-me" onclick="viewCustomPlaylistDirectly()">+ Stwórz własną playlistę</div>
+        <div id="customPlaylistsContainer"></div>
+    </div>
+    <div class="main2">
+        <div class="details">
+            <img src="img/img3.jpg" alt="">
+            <div class="title">80's Hits</div>
+        </div>
+        <div id="songList" class="playlist">
+            <div class="song">
+                <div class="song-info">
+                    <span class="song-title">Dashboard Gold</span>
+                    <span class="artist">The Synthetics</span>
+                </div>
+                <button id="btn-0" onclick="togglePlay(0)">▶</button>
+            </div>
+
+            <div class="song">
+                <div class="song-info">
+                    <span class="song-title">Back to You</span>
+                    <span class="artist">Luna & The Bots</span>
+                </div>
+                <button id="btn-1" onclick="togglePlay(1)">▶</button>
+            </div>
+
+            <div class="song">
+                <div class="song-info">
+                    <span class="song-title">Bodak Yellow</span>
+                    <span class="artist">Glitter Wave</span>
+                </div>
+                <button id="btn-2" onclick="togglePlay(2)">▶</button>
+            </div>
+
+            <div class="song">
+                <div class="song-info">
+                    <span class="song-title">Pale Blue Light</span>
+                    <span class="artist">The Digital Ghost Club</span>
+                </div>
+                <button id="btn-3" onclick="togglePlay(3)">▶</button>
+            </div>
+        </div>
+        <div id="nowPlayingPanel" class="side-panel">
+            <div class="panel-header">
+                <h3 class="translate-me">Teraz odtwarzane</h3>
+                <button class="close-panel-btn" onclick="toggleSidePanel(false)">×</button>
+            </div>
+
+            <div class="visualizer-wrapper">
+                <canvas id="circularVisualizer" width="350" height="350"></canvas>
+                <div id="spinningDisc" class="spinning-disc">
+                    <div class="disc-center"></div>
+                </div>
+            </div>
+
+            <div class="panel-info">
+                <h2 id="panelTitle" class="translate-me">Tytuł utworu</h2>
+                <p id="panelArtist" class="translate-me">Nieznany wykonawca</p>
+            </div>
+        </div>
+
+        <div class="bottom-player">
+            <div class="player-left">
+                <div class="track-info">
+                    <div id="playerTitle" class="player-track-title translate-me">Brak utworu</div>
+                    <div id="playerArtist" class="player-track-artist">-</div>
+                </div>
+                <button id="playerFavBtn" class="player-fav-btn">♥</button>
+            </div>
+
+            <div class="player-center">
+                <div class="control-buttons">
+                    <button id="prevBtn" title="Poprzedni utwór" onclick="playPrev()">⏮</button>
+                    <button id="masterPlayBtn" title="Odtwórz / Pauza" onclick="toggleMasterPlay()">▶</button>
+                    <button id="nextBtn" title="Następny utwór" onclick="playNext()">⏭</button>
+                </div>
+                <div class="player-bar">
+                    <span class="time-label" id="currentTime">0:00</span>
+                    <div id="progressBar">
+                        <div class="wave-container wave-hidden" id="barWave">
+                            <div class="wave-bar"></div>
+                            <div class="wave-bar"></div>
+                            <div class="wave-bar"></div>
+                            <div class="wave-bar"></div>
+                            <div class="wave-bar"></div>
+                            <div class="wave-bar"></div>
+                            <div class="wave-bar"></div>
+                            <div class="wave-bar"></div>
+                            <div class="wave-bar"></div>
+                            <div class="wave-bar"></div>
+                            <div class="wave-bar"></div>
+                            <div class="wave-bar"></div>
+                            <div class="wave-bar"></div>
+                            <div class="wave-bar"></div>
+                            <div class="wave-bar"></div>
+                            <div class="wave-bar"></div>
+                            <div class="wave-bar"></div>
+                            <div class="wave-bar"></div>
+                            <div class="wave-bar"></div>
+                            <div class="wave-bar"></div>
+                            <div class="wave-bar"></div>
+                            <div class="wave-bar"></div>
+                            <div class="wave-bar"></div>
+                            <div class="wave-bar"></div>
+                            <div class="wave-bar"></div>
+                            <div class="wave-bar"></div>
+                            <div class="wave-bar"></div>
+                            <div class="wave-bar"></div>
+                            <div class="wave-bar"></div>
+                            <div class="wave-bar"></div>
+                        </div>
+                        <div id="progressFill"></div>
+                    </div>
+                    <span class="time-label" id="totalTime">0:00</span>
+                </div>
+            </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

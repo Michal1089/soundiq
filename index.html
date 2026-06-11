@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./img/soundiq.png">
+    <title>Soundiq | Your Music</title>
+</head>
+<body>
+    <div class="lang-switcher-container">
+    <select id="langSelect" onchange="changeLanguage(this.value)">
+        <option value="pl">PL</option>
+        <option value="en">EN</option>
+        <option value="de">DE</option>
+        <option value="es">ES</option>
+        <option value="it">IT</option>
+        <option value="cs">CS</option>
+        <option value="ja">JA</option>
+        <option value="ar">AR</option>
+    </select>
+</div>
+    <div class="sidebar">
+        <img src="img/soundiq.png" alt="">
+        <div class="logo">Soundiq</div>
+        <div class="menu-item translate-me" onclick="home()">Home</div>
+        <div class="menu-item translate-me" onclick="searchSong()">Szukaj</div>
+        <div class="menu-item fav-link translate-me" onclick="openFavourites()">&#9829; Polubione</div>
+        <div class="menu-item translate-me" onclick="viewCustomPlaylistDirectly()">+ Stwórz własną playlistę</div>
+        <div id="customPlaylistsContainer"></div>
+</div>
+<div class="main">
+    
+    <div class="promo-banner" id="promoBanner">
+        <div class="promo-content">
+            <span class="badge translate-me">Teraz w Soundiq</span>
+            <h2 id="promoTitle" class="translate-me">Odkryj magię dźwięku</h2>
+            <p id="promoText" class="translate-me">Włącz swoją ulubioną playlistę i kontroluj muzykę za pomocą nowego paska na dole ekranu.</p>
+        </div>
+    </div>
+
+<div id="recentlyPlayedSection" style="margin-top: 30px;">
+    <h2 style="margin-bottom: 15px;" class="translate-me">Ostatnio odtwarzane piosenki</h2>
+    <div class="recent-songs-list">
+        
+        <div class="recent-song-card" onclick="playStaticSong('audio1/Dashboard Gold.mp3', 'Dashboard Gold', 'The Synthetics')">
+            <div class="recent-song-info">
+                <span class="recent-song-title">Dashboard Gold</span>
+                <span class="recent-song-artist">The Synthetics</span>
+            </div>
+            <button class="recent-play-btn">▶</button>
+        </div>
+
+        <div class="recent-song-card" onclick="playStaticSong('audio1/Ghost in the Light.mp3', 'Ghost in the Light', 'Luna & The Bots')">
+            <div class="recent-song-info">
+                <span class="recent-song-title">Ghost in the Light</span>
+                <span class="recent-song-artist">Luna & The Bots</span>
+            </div>
+            <button class="recent-play-btn">▶</button>
+        </div>
+
+        <div class="recent-song-card" onclick="playStaticSong('audio1/Wild Thoughts.mp3', 'Wild Thoughts', 'Dua Lipa')">
+            <div class="recent-song-info">
+                <span class="recent-song-title">Pale Blue Light</span>
+                <span class="recent-song-artist">The Digital Ghost Club</span>
+            </div>
+            <button class="recent-play-btn">▶</button>
+        </div>
+
+    </div>
+</div>
+
+    <h1 class="translate-me">Dla Ciebie</h1>
+    <div class="playlistGrid">
+        <div class="card" onclick="openPlaylist(1)"><img src="img/img1.jpg" alt=""><div class="title">Top Hits</div><div class="subtitle">Playlist</div></div>
+        <div class="card" onclick="openPlaylist(2)"><img src="img/img2.jpg" alt=""><div class="title">Chill Songs</div><div class="subtitle">Playlist</div></div>
+        <div class="card" onclick="openPlaylist(3)"><img src="img/img3.jpg" alt=""><div class="title">Disney Piano</div><div class="subtitle">Playlist</div></div>
+        <div class="card" onclick="openPlaylist(4)"><img src="img/img4.jpg" alt=""><div class="title">80's Hits</div><div class="subtitle">Playlist</div></div>
+        <div class="card" onclick="openPlaylist(5)"><img src="img/img5.jpg" alt=""><div class="title">Polski Hip Hop</div><div class="subtitle">Playlist</div></div>
+        <div class="card" onclick="openPlaylist(6)"><img src="img/img6.jpg" alt=""><div class="title">Rock</div><div class="subtitle">Playlist</div></div>
+        <div class="card" onclick="renderCustomPlaylistsMenu()"><img src="img/img7.jpg" alt=""><div class="title">Własna playlista</div><div class="subtitle">Twoje utwory</div>
+</div>
+    </div>
+</div>
+    <div class="bottom-player">
+        <div class="player-left">
+            <div class="track-info">
+                <div id="playerTitle" class="player-track-title translate-me">Brak utworu</div>
+                <div id="playerArtist" class="player-track-artist">-</div>
+            </div>
+            <button id="playerFavBtn" class="player-fav-btn">♥</button>
+        </div>
+<div class="player-center">
+            <div class="control-buttons">
+                <button id="prevBtn" title="Poprzedni utwór" onclick="playPrev()">⏮</button>
+                <button id="masterPlayBtn" title="Odtwórz / Pauza" onclick="toggleMasterPlay()">▶</button>
+                <button id="nextBtn" title="Następny utwór" onclick="playNext()">⏭</button>
+            </div>
+            <div class="player-bar">
+                <span class="time-label" id="currentTime">0:00</span>
+                <div id="progressBar">
+                    <div class="wave-container wave-hidden" id="barWave">
+                        <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+                        <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+                        <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+                        <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+                        <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+                        <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+                    </div>
+                    <div id="progressFill"></div>
+                </div>
+                <span class="time-label" id="totalTime">0:00</span>
+            </div>
+        </div>
+
+        <div class="player-right"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

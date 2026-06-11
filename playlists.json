@@ -1,0 +1,62 @@
+{
+    "topHits": {
+        "name": "Top Hits",
+        "img": "img/img4.jpg",
+        "songs": [
+            { "title": "1-800-273-8255", "artist": "Logic ft. Alessia Cara & Khalid", "src": "audio1/1-800-273-8255.mp3" },
+            { "title": "Back to You", "artist": "Louis Tomlinson", "src": "audio1/Back to You.mp3" },
+            { "title": "Bodak Yellow", "artist": "Cardi B", "src": "audio1/Bodak Yellow.mp3" },
+            { "title": "Wild Thoughts", "artist": "DJ Khaled ft. Rihanna", "src": "audio1/Wild Thoughts.mp3" }
+        ]
+    },
+    "chillSongs": {
+        "name": "Chill Songs",
+        "img": "img/img3.jpg",
+        "songs": [
+            { "title": "Blood Milk Moon", "artist": "Mount Kimbie", "src": "audio2/Blood Milk Moon.mp3" },
+            { "title": "Hinoki Wood", "artist": "Bibio", "src": "audio2/Hinoki Wood.mp3" },
+            { "title": "Three Piece Suit", "artist": "George Fitzgerald", "src": "audio2/Three Piece Suit.mp3" },
+            { "title": "You got time and I got money", "artist": "Unknown", "src": "audio2/You got time and I got money.mp3" }
+        ]
+    },
+    "disneyPiano": {
+        "name": "Disney Piano",
+        "img": "img/img2.jpg",
+        "songs": [
+            { "title": "Can You Feel The Love Tonight", "artist": "Elton John", "src": "audio5/Can You Feel The Love Tonight.mp3" },
+            { "title": "Colors of the Wind", "artist": "Vanessa Williams", "src": "audio5/Colors of the Wind.mp3" },
+            { "title": "La Festin", "artist": "Camille", "src": "audio5/La Festin.mp3" },
+            { "title": "Zoo", "artist": "Unknown", "src": "audio5/Zoo.mp3" }
+        ]
+    },
+    "hits": {
+        "name": "80's Hits",
+        "img": "img/img1.jpg",
+        "songs": [
+            { "title": "Africa", "artist": "Toto", "src": "audio4/Africa.mp3" },
+            { "title": "Every Body Wants To Rule The World", "artist": "Tears For Fears", "src": "audio4/Every Body Wants To Rule The World.mp3" },
+            { "title": "Sweet Dreams (Are Made of This)", "artist": "Eurythmics", "src": "audio4/Sweet Dreams (Are Made of This).mp3" },
+            { "title": "Take on Me", "artist": "a-ha", "src": "audio4/Take on Me.mp3" }
+        ]
+    },
+    "polskiHipHop": {
+        "name": "Polski Hip Hop",
+        "img": "img/img5.jpg",
+        "songs": [
+            { "title": "Ja Mam To Co Ty", "artist": "Taco Hemingway", "src": "audio3/Ja Mam To Co Ty.mp3" },
+            { "title": "Jest Jedna Rzecz", "artist": "Quebonafide", "src": "audio3/Jest Jedna Rzecz.mp3" },
+            { "title": "Jestem Bogiem", "artist": "Plomien 81", "src": "audio3/Jestem Bogiem.mp3" },
+            { "title": "Na Szczycie", "artist": "Sokol", "src": "audio3/Na Szczycie.mp3" }
+        ]
+    },
+    "rock": {
+        "name": "Rock",
+        "img": "img/img6.jpg",
+        "songs": [
+            { "title": "Wish You Were Here", "artist": "Pink Floyd", "src": "audio6/Wish You Were Here.mp3" },
+            { "title": "Dreams", "artist": "Fleetwood Mac", "src": "audio6/Dreams - 2004 Remaster.mp3" },
+            { "title": "Stairway to Heaven", "artist": "Led Zeppelin", "src": "audio6/Stairway to Heaven - Remaster.mp3" },
+            { "title": "Paint It, Black", "artist": "The Rolling Stones", "src": "audio6/Paint It Black.mp3" }
+        ]
+    }
+}

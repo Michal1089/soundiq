@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./img/soundiq.png">
+    <title>Soundiq | Favourites</title>
+</head>
+<body>
+    <div class="lang-switcher-container">
+    <select id="langSelect" onchange="changeLanguage(this.value)">
+        <option value="pl">PL</option>
+        <option value="en">EN</option>
+        <option value="de">DE</option>
+        <option value="es">ES</option>
+        <option value="it">IT</option>
+        <option value="cs">CS</option>
+        <option value="ja">JA</option>
+        <option value="ar">AR</option>
+    </select>
+</div>
+    <div class="sidebar">
+        <img src="img/soundiq.png" alt="">
+        <div class="logo">Soundiq</div>
+        <div class="menu-item translate-me" onclick="home()">Home</div>
+        <div class="menu-item translate-me" onclick="searchSong()">Szukaj</div>
+        <div class="menu-item fav-link translate-me" onclick="openFavourites()">&#9829; Polubione</div>
+        <div class="menu-item translate-me" onclick="viewCustomPlaylistDirectly">+ Stwórz własną playlistę</div>
+        <div id="customPlaylistsContainer"></div>
+</div>
+    <div class="main2">
+        <h1 class="translate-me">&#9829; Polubione</h1>
+        <div class="player-bar">
+            <span class="time-label" id="currentTime">0:00</span>
+            <div id="progressBar"><div id="progressFill"></div></div>
+            <span class="time-label" id="totalTime">0:00</span>
+        </div>
+        <div class="playlist">
+            <div id="songList"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

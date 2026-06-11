@@ -390,7 +390,7 @@ function playPrev() {
 }
 
 function playStaticSong(src, title, artist) {
-    const button = document.getElementById("btn-" + index);
+    const button = document.getElementById("btn-${index}");
     const staticSong = { title: title, artist: artist, src: src };
     
     audio.src = src;
